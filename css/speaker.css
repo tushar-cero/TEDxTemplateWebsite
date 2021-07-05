@@ -1,0 +1,140 @@
+main{
+    background-color: var(--blackish-color);
+    color: var(--white-color);
+}
+
+.Landing{
+    height: 70vh;
+
+    background-image: url('../images/bgi/speakers-bgi-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Landing .main-heading{
+    font-size: 100px;
+}
+
+
+.Speaker-Section{
+    height: auto;
+    padding: 200px 50px 50px 50px;
+}
+.Speaker-Section .speaker-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Speaker-Section .speaker-grid .card{
+    position: relative;
+    width: 300px;
+    border-top: var(--ted-red) 5px solid;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 16px;
+    box-shadow: rgba(136, 136, 136, 0.2) 0px 8px 24px;
+    background-color: var(--blackish-color);
+    color: var(--white-color);
+}
+.Speaker-Section .speaker-grid .card figure{
+    position: absolute;
+    top: -125px;
+    left: 25px;
+}
+.Speaker-Section .speaker-grid .card figure,
+.Speaker-Section .speaker-grid .card figure img{
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+.Speaker-Section .speaker-grid .card .info{
+    padding: 140px 16px 16px 16px;
+    border-radius: 10px 10px 0px 0px;
+}
+.Speaker-Section .speaker-grid .card .info h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+.Speaker-Section .speaker-grid .card  .info h2{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--ted-red);
+    padding-bottom: 16px;
+}
+.Speaker-Section .speaker-grid .card  .info .social-media{
+    font-size: 24px;
+    color: var(--dull-white-color);
+}
+/*
+.Speaker-Section{
+    height: auto;
+}
+.Speaker-Section .speaker-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0px;
+}
+.Speaker-Section .speaker-grid .card{
+    display: block;
+    width: auto;
+    text-align: center;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border-top: var(--ted-red) 5px solid;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+}
+.Speaker-Section .speaker-grid .card figure,
+.Speaker-Section .speaker-grid .card figure img{
+    width: 100px;
+    height: auto;
+    text-align: center;
+}
+.Speaker-Section .speaker-grid .info{
+    background-color: var(--white-color);
+    color: var(--blackish-color);
+    padding: 16px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+
+/* ---------- MEDIA QUERY ---------- */
+
+
+
+@media(max-width: 1100px){
+
+    .Landing .main-heading{
+        font-size: 70px;
+    }
+
+    .Speaker-Section .speaker-grid .card{
+        margin: 70px 16px;
+    }
+}
+
+@media(max-width: 700px){
+    
+    .Landing{
+        height: 600px;
+    }
+    .Landing .main-heading{
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 560px){
+    
+    .Landing .main-heading{
+        font-size: 30px;
+    }
+}

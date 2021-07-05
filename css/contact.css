@@ -1,0 +1,96 @@
+main{
+    background-color: var(--blackish-color);
+    color: var(--white-color);
+}
+
+.Landing{
+    height: 70vh;
+
+    background-image: url('../images/bgi/contact-bgi.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Landing .main-heading{
+    font-size: 100px;
+}
+
+.Form-Section{
+    padding: 40px 0px;
+}
+.Form-Section form .form-element{
+    padding: 30px;
+    border: rgb(29, 29, 29) 1px solid;
+}
+.Form-Section form .form-element label{
+    color: var(--ted-red);
+    padding: 10px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px 0px;
+}
+.Form-Section form .form-element  p{
+    padding: 10px 0px;
+}
+.Form-Section form .form-element input{
+    background: transparent;
+    color: var(--white-color);
+    border-bottom: var(--ted-red-light) 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    padding: 0.5em;
+    margin: 10px 0px;
+    font-size: 16px;
+}
+.Form-Section form .form-element .input-box{
+    width: 50%;
+}
+.Form-Section form .form-element .input-checkbox{
+    margin: 0em 0.5em;
+}
+.Form-Section form .submit-btn{
+    background-color: var(--ted-red);
+    color: var(--dull-white-color);
+    font-size: 20px;
+    padding: 8px;
+    border: var(--ted-red) 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Form-Section form .submit-btn:hover{
+    background-color: transparent;
+    color: var(--ted-red);
+    transition: 0.35s ease-in;
+}
+
+
+
+/* ---------- MEDIA QUERY ---------- */
+
+
+
+@media(max-width: 1100px){
+
+    .Landing .main-heading{
+        font-size: 70px;
+    }
+}
+
+@media(max-width: 700px){
+    
+    .Landing{
+        height: 600px;
+    }
+    .Landing .main-heading{
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 560px){
+    
+    .Landing .main-heading{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,146 @@
+main{
+    background-color: var(--blackish-color);
+    color: var(--white-color);
+}
+
+
+.Landing{
+    height: 70vh;
+
+    background-image: url('../images/bgi/party.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Landing .main-heading{
+    font-size: 100px;
+}
+
+
+.Team-Section{
+    padding: 100px 0px;
+}
+.Team-Section .team{
+    padding: 100px 0px;
+}
+.Team-Section .team header{
+    text-align: center;
+    color: var(--ted-red);
+    padding: 16px;
+    font-size: 52px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.Team-Section .team .team-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+.Team-Section .team .team-grid .card{
+    width: 250px;
+    height: auto;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    padding: 16px;
+    margin:0px 8px 16px 8px;
+    border: rgb(70, 70, 70) 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+}
+.Team-Section .team .team-grid .card h1{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.Team-Section .team .team-grid .card h2{
+    color: var(--ted-red);
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    height: 18px;
+}
+.Team-Section .team .team-grid .card .social-media{
+    font-size: 22px;
+    color: var(--dull-white-color);
+}
+.Team-Section .team .team-grid .card figure,
+.Team-Section .team .team-grid .card figure img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+
+
+/* ---------- MEDIA QUERY ---------- */
+
+
+
+@media(max-width: 1100px){
+
+    .Landing .main-heading{
+        font-size: 70px;
+    }
+}
+
+
+@media(max-width: 1000px){
+    
+}
+
+
+@media(max-width: 700px){
+    
+    .Landing{
+        height: 600px;
+    }
+    .Landing .main-heading{
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 560px){
+    
+    
+    .Landing{
+        height: 400px;
+    }
+    .Landing .main-heading{
+        font-size: 30px;
+    }
+
+    .Team-Section .team{
+        padding: 50px 0px;
+    }
+    .Team-Section .team header{
+        font-size: 28px;
+        font-weight: 600;
+        font-family: 'Roboto', sans-serif;
+    }
+    .Team-Section .team .team-grid .card h1{
+        margin-top: 16px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .Team-Section .team .team-grid .card h2{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .Team-Section .team .team-grid .card .social-media{
+        font-size: 16px;
+    }
+
+    .Team-Section .team .team-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0px;
+    }
+}
