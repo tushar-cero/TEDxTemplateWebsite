@@ -27,15 +27,14 @@
 
 <body>
 
+    <!-- Header -->
     <header class="Nav-Header">
         <div class="container">
-            <div class="space-flex">
+            <div class="header-container">
                 <figure>
                     <a href="index.html"><img src="images/logo/full-logo.png" alt="Club Logo"></a>
                 </figure>
-                <nav>
-                    <input type="checkbox" id="nav" class="hidden"/>
-                    <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+                <nav class="desktop-nav">
                     <div class="nav-container">
                         <ul class="center-flex">
                             <li><a href="index.html">HOME</a></li>
@@ -46,18 +45,51 @@
                         </ul>
                     </div>
                 </nav>
+                <nav class="mobile-nav">
+                    <button onclick="openMenu(this)" class="menu-btn">Menu <i class="fa fa-bars"></i></button>
+                </nav>
             </div>
         </div>
     </header>
 
+
+    <!-- Menu -->
+    <div id="MenuWindow" class="hide">
+        <div class="Menu-Window just-flex">
+            <div class="menu-box">
+                <div class="box-header">
+                    <div>MENU</div>
+                    <div>
+                        <button onclick="closeMenu(this)"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>  
+                <div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="speaker.html">SPEAKERS</a></li>
+                        <li><a href="team.html">TEAM</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li ><a href="https://pages.razorpay.com/tedxdypakurdi">BUY TICKET</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+
     <main>
+
+        <!-- Space to Hide beind the menu on the top -->
+
         <article class="space-for-fixed-header"></article>
+
+        <!-- Landing -->
 
         <article id="particles-js" class="just-flex">
             <div class="just-flex container Landing">
                 <div>
                     <h1 id="current_date" class="current_date"></h1>
-                    <h1 class="main-heading">TRANSCENDING BOUNDARIES</h1>
+                    <h1 class="main-heading" data-aos="zoom-in">TRANSCENDING BOUNDARIES</h1>
                     <h2>Virtual Event</h2>
                     <div class="box">
                         <h3>Follow us on</h3>
@@ -69,6 +101,8 @@
                 </div>
             </div>
         </article>
+
+        <!-- Speaker Section -->
 
         <article class="Speakers full-height">
             <div class="container">
@@ -153,6 +187,8 @@
             </div>
         </article>
 
+        <!-- About Section -->
+
         <article class="About-Section full-height">
             <div class="container">
                 <div class="about-grid">
@@ -176,6 +212,8 @@
         </article>
 
     </main>
+
+    <!-- Footer -->
 
     <footer>
         <div class="container">
@@ -210,6 +248,7 @@
         </div>
     </footer>
 
+    <script src="js/index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init({ offset: 120, duration: 350 });</script>
     <script src="js/particles.js"></script>

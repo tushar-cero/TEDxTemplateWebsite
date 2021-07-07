@@ -21,21 +21,20 @@
     <!--LOGO--><link rel="shortcut icon" href="images/logo/logo-small.png">
     <!--STYLESHEET--><link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/team.css">
-    <!--FONT AWESOME--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--FONT AWESOME--><link rel="preload" as="font" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--AOS--><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
+    <!-- Header -->
     <header class="Nav-Header">
         <div class="container">
-            <div class="space-flex">
+            <div class="header-container">
                 <figure>
                     <a href="index.html"><img src="images/logo/full-logo.png" alt="Club Logo"></a>
                 </figure>
-                <nav>
-                    <input type="checkbox" id="nav" class="hidden"/>
-                    <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+                <nav class="desktop-nav">
                     <div class="nav-container">
                         <ul class="center-flex">
                             <li><a href="index.html">HOME</a></li>
@@ -46,9 +45,36 @@
                         </ul>
                     </div>
                 </nav>
+                <nav class="mobile-nav">
+                    <button onclick="openMenu(this)" class="menu-btn">Menu <i class="fa fa-bars"></i></button>
+                </nav>
             </div>
         </div>
     </header>
+
+
+    <!-- Menu -->
+    <div id="MenuWindow" class="hide">
+        <div class="Menu-Window just-flex">
+            <div class="menu-box">
+                <div class="box-header">
+                    <div>MENU</div>
+                    <div>
+                        <button onclick="closeMenu(this)"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>  
+                <div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="speaker.html">SPEAKERS</a></li>
+                        <li><a href="team.html">TEAM</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li ><a href="https://pages.razorpay.com/tedxdypakurdi">BUY TICKET</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </div>
 
     <main>
         <article class="space-for-fixed-header"></article>
@@ -56,7 +82,7 @@
         <article class="Landing">
             <div class="just-flex container">
                 <div>
-                    <h1 class="main-heading">TEAM</h1>
+                    <h1 class="main-heading" data-aos="zoom-in">TEAM</h1>
                 </div>
             </div>
         </article>
@@ -445,6 +471,7 @@
         </div>
     </footer>
 
+    <script src="js/index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init({ offset: 120, duration: 350 });</script>
 </body>
